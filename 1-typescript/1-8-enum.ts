@@ -23,4 +23,7 @@
   let day: Days = Days.Wednesday
   day = Days.Tuesday
   day = 3
+
+  let dayOfweek: DaysofWeek = 'Monday'
+  dayOfweek = 'Wednedsday' // union type 내에서만 수정 가능함
 }
