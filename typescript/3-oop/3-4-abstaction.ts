@@ -92,6 +92,7 @@
       this.machine.clean()
     }
   }
+  // 인터페이스에 규약된 함수들만 고려하면 됨. 
   const maker: CoffeeMachine = CoffeeMachine.makeMachine(32)
   const amateur = new AmateurUser(maker)
   const pro = new ProBarista(maker)

@@ -17,5 +17,6 @@
   const either: Either<number, number> = new SimpleEither(4, 5)
   either.left()
   either.right()
-  const best = new SimpleEither(4, 'hello')
+  // Object 타입도 가능 
+  const best: Either<number, string> = new SimpleEither({name:'neo'}, 'hello')
 }

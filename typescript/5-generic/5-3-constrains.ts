@@ -36,8 +36,8 @@
     animal: '🐸',
   }
 
-  function getValue<E>(obj: object, field: string): E {
-    return obj[field]
+  function getValue<O, K extends keyof O>(obj: O, key: K): O[K] {
+    return obj[key]
   }
   console.log(getValue(obj1, 'name')) // tomato
   console.log(getValue(obj1, 'age')) // 6

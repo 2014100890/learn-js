@@ -83,7 +83,7 @@
     }
   }
 
-  const machines = [
+  const machines: CoffeeMaker[] = [
     new CoffeeMachine(16),
     new CaffeeLatteeMachine(16, '1'),
     new SweetCoffeeMaker(16),
@@ -93,8 +93,8 @@
   ]
 
   machines.forEach(machine => {
-    console.log('=========')
-    machine.makeCoffee(1)
+    console.log('================')
+    machine.makeCoffee(1) // Interface에 있는 makeCoffee만 사용 가능 
   })
   //   const machine = new CoffeeMachine(23)
   //   const latteeMachine = new CaffeeLatteeMachine(23, 'SSSS')

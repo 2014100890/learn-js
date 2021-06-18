@@ -1,5 +1,5 @@
 {
-  function checkNotNull(arg: number | null): number {
+  function checkNotNull<GENERIC>(arg: GENERIC | null): GENERIC {
     if (arg == null) {
       throw new Error('not valid number!')
     }
