@@ -15,7 +15,9 @@
     }
   }
 
-  function getVideoMetadata(id: string): Pick<Video, 'id' | 'title'> {
+  type VideoMetadata = Pick<Video, 'id' | 'title'>
+
+  function getVideoMetadata(id: string): VideoMetadata {
     return {
       id: id,
       title: 'title',

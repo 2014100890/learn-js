@@ -1,14 +1,14 @@
 {
-  class TimeoutError extends Error {}
-  class OfflineError extends Error {}
-
+  // 예상할 수 있는 상태를 타입으로 정의해보자
   type SuccessState = {
     result: 'success'
   }
 
   type NetworkErrorState = {
-    result: 'Network Error'
+    result: 'fail'
+    reason: 'offline' | 'down' | 'timeout'
   }
+
   type ResultState = SuccessState | NetworkErrorState
   class NetworkClient {
     tryConnect(): ResultState {}

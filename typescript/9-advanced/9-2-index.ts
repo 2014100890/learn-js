@@ -26,6 +26,6 @@
 
   const person: Person = {
     name: 'LBK',
-    gender: male,
+    gender: 'male',
   }
 }

@@ -4,7 +4,7 @@
     description: string
   }
 
-  function display(todo: ToDo) {
-    todo.title = 'jaja'
+  function display(todo: Readonly<ToDo>) {
+    // todo.title = 'jaja'
   }
 }

@@ -15,7 +15,7 @@
     }
   }
 
-  type VideoMetadata = Pick<Video, 'id' | 'title'>
+  type VideoMetadata = Omit<Video, 'url' | 'data'>
 
   function getVideoMetadata(id: string): VideoMetadata {
     return {

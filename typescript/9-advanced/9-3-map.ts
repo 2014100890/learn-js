@@ -9,10 +9,11 @@
     [P in keyof T]?: T[P] // for ... in Object에 있는 key를 돌 수 있음
   }
 
-  type ReadOnly<T> = {
-    readonly [P in keyof T]?: T[P]
-  }
+  //   type ReadOnly<T> = {
+  //     readonly [P in keyof T]?: T[P]
+  //   }
   type VideoOptional = Optional<Video>
+  //   type VideoReadOnly = ReadOnly<Video>
   const videoOp: VideoOptional = {
     title: 'hi',
   }
@@ -34,7 +35,7 @@
     get(): T
     set(value: T): void
   }
-
+  // object를 돌며 타입을 proxy라는 타입으로 감쌀 수 있음
   type Proxify<T> = {
     [P in keyof T]: Proxy<T[P]>
   }

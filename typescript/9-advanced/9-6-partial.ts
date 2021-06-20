@@ -14,5 +14,5 @@
     label: 'study',
     priority: 'high',
   }
-  updateTodo(todo, { priority: 'low' })
+  const updated = updateTodo(todo, { priority: 'low' })
 }

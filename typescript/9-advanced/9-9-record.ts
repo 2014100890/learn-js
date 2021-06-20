@@ -11,5 +11,5 @@
   }
 
   type Product = 'cat' | 'dog'
-  type NewProduct = Capitalize<Product>
+  type NewProduct = Capitalize<Product> // Cat | Dog
 }

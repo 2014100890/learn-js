@@ -42,4 +42,13 @@
   type ZPositionType = PositionType & { z: number }
 
   // interface만 결합이 된다.
+
+  // type aliases can use computed properties
+  type Person = {
+    name: string
+    age: number
+  }
+  type Name = Person['name'] // string
+  type Numbertype = number
+  type Direction = 'left' | 'right' // union type 만들기
 }
